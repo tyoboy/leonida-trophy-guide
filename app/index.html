@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Trophy Guide &amp; Tracker — GTA VI (PS5)</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <h1>Leonida Trophy Guide <span>&amp; Tracker</span></h1>
+      <p>Grand Theft Auto VI · PlayStation 5 · all 55 trophies, a five-stage roadmap, and your progress kept on this machine.</p>
+    </div>
+    <div class="progress-box">
+      <div class="progress-num"><span id="done-count">0</span>/55</div>
+      <div class="progress-bar"><div id="progress-fill"></div></div>
+      <div id="progress-detail" class="progress-detail">0% · nothing earned yet</div>
+    </div>
+  </header>
+
+  <nav id="toolbar">
+    <div class="row" id="kind-filters">
+      <button data-kind="all" class="chip on">All</button>
+      <button data-kind="story" class="chip">Story</button>
+      <button data-kind="activities" class="chip">Activities</button>
+      <button data-kind="collectibles" class="chip">Collectibles</button>
+      <button data-kind="watch" class="chip">One to watch</button>
+      <button data-kind="platinum" class="chip">Platinum</button>
+    </div>
+    <div class="row">
+      <label>Grade
+        <select id="grade-filter">
+          <option value="all">All grades</option>
+          <option value="platinum">Platinum</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="bronze">Bronze</option>
+        </select>
+      </label>
+      <label>View
+        <select id="view-mode">
+          <option value="list">Checklist</option>
+          <option value="roadmap">Roadmap</option>
+        </select>
+      </label>
+      <label class="check"><input type="checkbox" id="spoilers" checked> Hide story spoilers</label>
+      <label class="check"><input type="checkbox" id="remaining-only"> Remaining only</label>
+      <input id="search" type="search" placeholder="Search trophies…" autocomplete="off">
+    </div>
+    <div class="row">
+      <button id="export-progress" class="ghost">Export progress</button>
+      <label class="ghost file-label">Import progress<input id="import-progress" type="file" accept="application/json" hidden></label>
+      <button id="reset-progress" class="ghost danger">Reset</button>
+    </div>
+  </nav>
+
+  <main>
+    <section id="roadmap" hidden></section>
+    <section id="list"></section>
+    <p class="source-note" id="source-note"></p>
+  </main>
+
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>

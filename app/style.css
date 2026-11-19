@@ -1,0 +1,63 @@
+/* Leonida Trophy Guide & Tracker: a sunset wall, medal-coloured accents. */
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: #171126; color: #f4effc;
+  font-family: "Segoe UI", "Liberation Sans", Arial, sans-serif;
+}
+header {
+  display: flex; gap: 28px; align-items: center; justify-content: space-between;
+  padding: 26px 34px 18px; flex-wrap: wrap;
+  background: linear-gradient(100deg, #2b1055 0%, #752b6b 55%, #c94f4f 100%);
+}
+header h1 { margin: 0; font-size: 30px; }
+header h1 span { color: #ffb03a; }
+header p { margin: 6px 0 0; color: #e8dcff; max-width: 560px; line-height: 1.45; }
+.progress-box { min-width: 240px; }
+.progress-num { font-size: 30px; font-weight: 900; text-align: right; }
+.progress-bar { height: 12px; background: rgba(255,255,255,0.22); border-radius: 999px; overflow: hidden; margin: 6px 0; }
+#progress-fill { height: 100%; width: 0; background: #ffb03a; border-radius: 999px; transition: width 0.3s; }
+.progress-detail { text-align: right; color: #ffe9c4; font-size: 13px; }
+#toolbar {
+  padding: 14px 34px; display: flex; flex-direction: column; gap: 10px;
+  background: #1f1838; border-bottom: 1px solid #3a2d63; position: sticky; top: 0; z-index: 5;
+}
+#toolbar .row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.chip {
+  background: #2c2350; color: #e9e2ff; border: 1px solid #4b3a85; border-radius: 999px;
+  padding: 7px 13px; cursor: pointer; font-size: 13.5px;
+}
+.chip.on { background: #ffb03a; color: #241300; border-color: #ffb03a; font-weight: 700; }
+#toolbar label { font-size: 13px; color: #c9bdf0; display: flex; gap: 6px; align-items: center; }
+#toolbar select, #search {
+  background: #120d24; color: #fff; border: 1px solid #4b3a85; border-radius: 7px; padding: 7px 9px; font-size: 13.5px;
+}
+#search { min-width: 190px; }
+.ghost {
+  background: transparent; color: #cfc3f7; border: 1px solid #4b3a85; border-radius: 7px;
+  padding: 7px 12px; cursor: pointer; font-size: 13px;
+}
+.ghost.danger { color: #ff9a8a; border-color: #7a3a34; }
+.file-label { display: inline-block; }
+main { padding: 20px 34px 34px; max-width: 1060px; margin: 0 auto; }
+.card {
+  display: flex; gap: 14px; background: #221a40; border: 1px solid #392c68;
+  border-radius: 10px; padding: 14px 16px; margin-bottom: 10px;
+}
+.card.earned { border-color: #ffb03a; background: #2a2148; }
+.card input[type="checkbox"] { width: 22px; height: 22px; accent-color: #ffb03a; flex: none; margin-top: 3px; cursor: pointer; }
+.card h3 { margin: 0 0 3px; font-size: 18.5px; }
+.medal { font-size: 15px; }
+.medal.platinum { color: #7ee8fa; }
+.medal.gold { color: #ffd23e; }
+.medal.silver { color: #cfd8dc; }
+.medal.bronze { color: #e08a4c; }
+.meta { font-size: 12.5px; color: #a897e0; letter-spacing: 0.4px; text-transform: capitalize; }
+.watch-badge { background: #c0392b; color: #fff; padding: 1px 7px; border-radius: 999px; font-size: 11px; font-weight: 800; letter-spacing: 1px; }
+.desc { margin: 7px 0 0; color: #efeaff; font-style: italic; }
+.guide { margin: 6px 0 0; color: #cfc6ee; line-height: 1.5; }
+.cite { margin: 6px 0 0; font-size: 12px; color: #8d7fc0; }
+.stage { margin-bottom: 26px; }
+.stage h2 { font-size: 21px; margin: 0 0 4px; color: #ffb03a; }
+.stage-note { color: #bdb0ea; margin: 0 0 12px; line-height: 1.5; max-width: 760px; }
+.empty { color: #a897e0; padding: 22px 0; }
+.source-note { color: #8d7fc0; font-size: 13px; line-height: 1.55; border-top: 1px solid #392c68; padding-top: 14px; margin-top: 22px; }
