@@ -1,0 +1,5 @@
+[
+  { "name": "1-checklist.jpg", "path": "/?spoilers=off", "w": 1280, "h": 800 },
+  { "name": "2-silver.jpg", "path": "/?grade=silver&spoilers=off", "w": 1280, "h": 800 },
+  { "name": "3-roadmap.jpg", "path": "/?view=roadmap&spoilers=off", "w": 1280, "h": 800 }
+]
